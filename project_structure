@@ -1,0 +1,14 @@
+classroom-notes/
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   └── js/
+│       ├── auth.js
+│       ├── editor.js
+│       └── viewer.js
+├── templates/
+│   ├── login.html
+│   ├── editor.html
+│   └── viewer.html
+├── app.py
+└── requirements.txt 

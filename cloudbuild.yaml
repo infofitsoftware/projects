@@ -1,0 +1,17 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/$PROJECT_ID/classroom-notes', '.']
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/$PROJECT_ID/classroom-notes']
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
+    args:
+      - 'run'
+      - 'deploy'
+      - 'classroom-notes'
+      - '--image'
+      - 'gcr.io/$PROJECT_ID/classroom-notes'
+      - '--region'
+      - 'us-central1'
+      - '--platform'
+      - 'managed' 

@@ -1,0 +1,63 @@
+/* Editor and Viewer styles */
+.ql-editor {
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 400px;
+    background: #fff;
+}
+
+/* Custom scrollbar */
+.ql-editor::-webkit-scrollbar {
+    width: 8px;
+}
+
+.ql-editor::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.ql-editor::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+/* Connection status indicators */
+#connectionStatus {
+    transition: all 0.3s ease;
+}
+
+#lastUpdate {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Card styles */
+.card {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+/* Modal styles */
+.modal-content {
+    border-radius: 8px;
+}
+
+#shareLink {
+    background-color: #f8f9fa;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar-text {
+        display: none;
+    }
+    
+    .ql-editor {
+        font-size: 14px;
+        padding: 15px;
+    }
+} 
