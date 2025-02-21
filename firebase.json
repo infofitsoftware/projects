@@ -8,6 +8,14 @@
     ],
     "rewrites": [
       {
+        "source": "/editor/**",
+        "destination": "/editor.html"
+      },
+      {
+        "source": "/view/**",
+        "destination": "/viewer.html"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }

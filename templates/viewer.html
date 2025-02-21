@@ -4,7 +4,7 @@
     <title>Classroom Notes - Viewer</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.quilljs.com/1.3.6/quill.bubble.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="/static/css/style.css" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -40,6 +40,6 @@
         // Pass session ID to JavaScript
         window.SESSION_ID = "{{ session_id }}";
     </script>
-    <script src="{{ url_for('static', filename='js/viewer.js') }}"></script>
+    <script src="/static/js/viewer.js"></script>
 </body>
 </html> 
